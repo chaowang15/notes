@@ -1,10 +1,19 @@
 # Detailed Usage of Important Git Commands
 ## Initialization
-#### Create first remote repository and push local files into it
+### Create first remote repository and push local files into it
 Follow the following steps to create a repository at the first time:
+$$
+\begin{aligned}
+\mathbf{b} = \begin{bmatrix}
+     a & 1 \\
+     b & 2
+\end{bmatrix}
+\tag{1.1}    
+\end{aligned}
+$$ 
 
-0. Create a new empty repository online in your browser;
-1. Go to your local folder which you want to push to remote repo. Then initialize it by
+1. Create a new empty repository online in your browser;
+2. Go to your local folder which you want to push to remote repo. Then initialize it by
 ```shell
 git init .
 ```
@@ -49,14 +58,14 @@ git push -u origin master
 ```
 Here the `-u` option automatically sets that upstream for you, linking your repo to a central one. That way, in the future, Git "knows" where you want to push to and where you want to pull from, so you can use `git pull` or `git push` without arguments to handle codes from master. However, in a large project with more than 1 person involved, it is better to use the full command `git push origin <branch>` to ensure you won't ruin the master. 
 
-#### Remove/Reinitialize local repository
+### Remove/Reinitialize local repository
 If you want to remove/reinitialize your local repo, such as you find some mistakes in your repo and want to create a new repo and push local files again, you can use
 ```shell
 rm -rf .git
 ```
 and then follow steps to create a new remote repo and push files into it.
 
-#### Clone a repository
+### Clone a repository
 Cloning a remote repository entirely to your local place by
 ```shell
 git clone <repo_link>
