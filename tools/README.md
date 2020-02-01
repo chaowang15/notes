@@ -9,6 +9,13 @@
 
 **AddressSanitizer** (aka ASan) is a memory error detector (memory addressability) for C/C++. There is also LeakSanitizer to detect memory leak.
 
+## GLog
+- [使用 Google 的 glog 日志库
+](http://senlinzhan.github.io/2017/10/07/glog/)
+- https://blog.csdn.net/handsome_for_kill/article/details/69808446
+
+GLog是Google开发的一款很好的LOG日志工具。用法上面的链接中基本都有了。补充一点，默认的Log文件的路径是`/tmp`。
+
 ## gflags
 - [https://github.com/gflags/gflags](https://github.com/gflags/gflags)
 
